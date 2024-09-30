@@ -7,9 +7,16 @@ type CounterState = {
 }
 
 type CounterAction = {
-    type: string
+    type: 'increment' | 'decrement'
     payload: number
 }
+
+//given an additional action with different payload
+// type resetAction = {
+//     type: 'increment' | 'decrement'
+// }
+
+// type UpfateAction = CounterAction | resetAction 
 
 const initialState = {count: 0}
 
