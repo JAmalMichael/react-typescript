@@ -3,6 +3,7 @@
 // import Oscar from "./components/Oscar"
 
 import Button from "./components/Button"
+import Container from "./components/Container"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
       <Button handleClick={(event) => {
         console.log("Button was clicked", event)
       }} />
+      <Container style={{border: '1px solid black', padding: '1rem'}}/>
     </>
   )
 }
