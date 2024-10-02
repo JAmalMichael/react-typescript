@@ -8,7 +8,8 @@
 // import { UserContextProvider } from "./components/context/UserContext"
 // import User from "./components/state/User"
 // import RandomNumber from "./components/restriction/RandomNumber"
-import Toast from "./components/templateliterals/Toast"
+// import Toast from "./components/templateliterals/Toast"
+import Button from "./components/Button"
 
 
 
@@ -36,8 +37,10 @@ function App() {
         </UserContextProvider> */}
 
         {/* <RandomNumber  value={10} isPositive /> */}
-        <Toast position="center" />
-
+        {/* <Toast position="center" /> */}
+        <Button variant="primary" onClick={() => console.log('Button Clicked')}>
+          Anything 
+          </Button>
     </>
   )
 }
