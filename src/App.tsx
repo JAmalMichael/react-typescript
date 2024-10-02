@@ -9,7 +9,8 @@
 // import User from "./components/state/User"
 // import RandomNumber from "./components/restriction/RandomNumber"
 // import Toast from "./components/templateliterals/Toast"
-import Button from "./components/Button"
+// import Button from "./components/Button"
+import Text from "./components/polymorphic/Text"
 
 
 
@@ -38,9 +39,12 @@ function App() {
 
         {/* <RandomNumber  value={10} isPositive /> */}
         {/* <Toast position="center" /> */}
-        <Button variant="primary" onClick={() => console.log('Button Clicked')}>
+        {/* <Button variant="primary" onClick={() => console.log('Button Clicked')}>
           Anything 
-          </Button>
+          </Button> */}
+          <Text as='h1' size='lg'>Heading</Text>
+          <Text as='p' size='md'>Paragraph</Text>
+          <Text as='label' size='sm' color='secondary'>Label</Text>
     </>
   )
 }
