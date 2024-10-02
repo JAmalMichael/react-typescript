@@ -5,8 +5,10 @@
 // import Container from "./components/Container"
 // import { ThemeContextProvider } from "./components/context/ThemeContext"
 // import Box from "./components/context/Box"
-import { UserContextProvider } from "./components/context/UserContext"
-import User from "./components/state/User"
+// import { UserContextProvider } from "./components/context/UserContext"
+// import User from "./components/state/User"
+import RandomNumber from "./components/restriction/RandomNumber"
+
 
 
 
@@ -27,10 +29,12 @@ function App() {
         {/* <ThemeContextProvider>
           <Box />
         </ThemeContextProvider> */}
-
+{/* 
         <UserContextProvider>
           <User />
-        </UserContextProvider>
+        </UserContextProvider> */}
+
+        <RandomNumber  value={10} isPositive />
 
     </>
   )
