@@ -7,7 +7,8 @@
 // import Box from "./components/context/Box"
 // import { UserContextProvider } from "./components/context/UserContext"
 // import User from "./components/state/User"
-import RandomNumber from "./components/restriction/RandomNumber"
+// import RandomNumber from "./components/restriction/RandomNumber"
+import Toast from "./components/templateliterals/Toast"
 
 
 
@@ -34,7 +35,8 @@ function App() {
           <User />
         </UserContextProvider> */}
 
-        <RandomNumber  value={10} isPositive />
+        {/* <RandomNumber  value={10} isPositive /> */}
+        <Toast position="center" />
 
     </>
   )
